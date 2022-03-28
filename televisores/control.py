@@ -13,11 +13,11 @@ class Control:
                 self._tv.setCanal(canal)
 
     def getTv(self):
-        return self.tv
+        return self._tv
 
     def canalUp(self):
         if(self._tv.estado == True and self._tv.canal < 120):
-            self._tv.setCanal(self.canal+1)
+            self._tv.setCanal(self._tv.canal+1)
 
     def canalDown(self):
         if(self._tv.estado == True and self._tv.canal > 1):
