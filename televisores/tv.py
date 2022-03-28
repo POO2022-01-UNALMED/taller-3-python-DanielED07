@@ -42,7 +42,7 @@ class TV:
             self.volumen = volumen
 
     def setCanal(self, canal):
-        if(self.estado == True and self.canal >= 1 and self.canal <= 120):
+        if(self.estado == True and self.canal >= 1 and self.canal <= 120 and canal >= 1 and canal <= 120):
             self.canal = canal
 
     @classmethod
